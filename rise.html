@@ -6,12 +6,8 @@
     <link rel="shortcut icon" href="/images/icon-sun.svg" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/rise.css" />
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>Page</title>
+   
+    <title>TO DO LIST</title>
   </head>
   <body>
     <header class="banner">
@@ -22,7 +18,7 @@
     </header>
     <section class="tasks">
       <div class="tasks__container container">
-        <form class="tasks__form">
+        <form class="tasks__form js-submit">
           <!--    section 1 -->
           <label class="checkbox">
             <input
@@ -34,24 +30,27 @@
           </label>
           <input
             type="text"
-            name=""
-            id=""
+            name="text"
+            id="task-input-text"
             class="form__input-text"
             placeholder="Create a new todo"
+            required
           />
         </form>
         <div class="tasks__content">
           <!--   section 2 -->
-          <ul class="tasks__list">
-            <li class="list__item">
+          <ul class="tasks__list js-lista">
+           <li class="list__item">
 
               <label class="checkbox">
                 <input class="checkbox__input" type="checkbox"  
                 name="myCheckboxName" checked/>
                 <div class="checkbox__box"></div>
-                <span>Complete online JavaScript couse</span>
+              <span>Complete online JavaScript couse</span>
               </label>
-              <img src="/images/icon-delete.svg" alt="" class="icons" />
+              <button class="checkbox__button js-btn-eliminar">
+                <img src="/images/icon-delete.svg"   alt="icon-delete"/>
+              </button>
             </li>
             <li class="list__item">
               <label class="checkbox" >
@@ -59,7 +58,9 @@
                 <div class="checkbox__box"></div>
                 <span >Jog around the park 3x</span>
               </label>
-              <img src="/images/icon-delete.svg" alt="" class="icons" />
+              <button class="checkbox__button js-btn-eliminar">
+                <img src="/images/icon-delete.svg"   alt="icon-delete"/>
+              </button>
             </li>
 
             <li class="list__item">
@@ -69,7 +70,9 @@
                 <div class="checkbox__box "></div>
                 <span>10 minutes meditation</span>
               </label>
-              <img src="/images/icon-delete.svg" alt="" class="icons" />
+              <button class="checkbox__button js-btn-eliminar">
+                <img src="/images/icon-delete.svg"   alt="icon-delete"/>
+              </button>
             </li>
             
 
@@ -81,7 +84,9 @@
                 <div class="checkbox__box"></div>
                 <span>Read for 1 hour</span>
               </label>
-              <img src="/images/icon-delete.svg" alt="" class="icons" />
+              <button class="checkbox__button js-btn-eliminar">
+                <img src="/images/icon-delete.svg"   alt="icon-delete"/>
+              </button>
             </li>
 
             <li class="list__item">
@@ -94,7 +99,9 @@
                 <div class="checkbox__box"></div>
                 <span>Pick up groceries</span>
               </label>
-              <img src="/images/icon-delete.svg" alt="" class="icons" />
+              <button class="checkbox__button js-btn-eliminar">
+                <img src="/images/icon-delete.svg"   alt="icon-delete"/>
+              </button>
             </li>
 
             <li class="list__item">
@@ -107,8 +114,10 @@
                 <div class="checkbox__box "></div>
                 <span>Complete Todo App on Fronted Mentor</span>
               </label>
-              <img src="/images/icon-delete.svg" alt="" class="icons" />
-            </li>
+              <button class="checkbox__button js-btn-eliminar">
+                <img src="/images/icon-delete.svg"   alt="icon-delete"/>
+              </button>
+            </li> 
           </ul>
 
           <div class=" task__options">
@@ -126,11 +135,8 @@
     <footer class="footer">
       <p class="footer__text">Drag and drop top record list</p>
     </footer>
+    <script src="/js/main.js"></script>
   </body>
 </html>
 
-<!-- <i class='bx bx-x  bx-sm'></i> -->
-<!--    <li class="list__item">
-              <input type="checkbox" name="" id="" class="list__input"/>
-              <span for="">Complete Todo App on Fronted Mentor</span>
-            </li> -->
+
