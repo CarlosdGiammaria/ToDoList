@@ -6,7 +6,8 @@
     <link rel="shortcut icon" href="/images/icon-sun.svg" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/rise.css" />
-   
+    
+
     <title>TO DO LIST</title>
   </head>
   <body>
@@ -22,9 +23,9 @@
           <!--    section 1 -->
           <label class="checkbox">
             <input
-              class="checkbox__input"
+              class="checkbox__input "
               type="checkbox"
-              name="myCheckboxName"
+              name="checkbox"
             />
             <div class="checkbox__box"></div>
           </label>
@@ -39,95 +40,19 @@
         </form>
         <div class="tasks__content">
           <!--   section 2 -->
-          <ul class="tasks__list js-lista">
-           <li class="list__item">
+          <ul class="tasks__list js-list"></ul>
 
-              <label class="checkbox">
-                <input class="checkbox__input" type="checkbox"  
-                name="myCheckboxName" checked/>
-                <div class="checkbox__box"></div>
-              <span>Complete online JavaScript couse</span>
-              </label>
-              <button class="checkbox__button js-btn-eliminar">
-                <img src="/images/icon-delete.svg"   alt="icon-delete"/>
-              </button>
-            </li>
-            <li class="list__item">
-              <label class="checkbox" >
-                <input class="checkbox__input" type="checkbox"  name="myCheckboxName"  />
-                <div class="checkbox__box"></div>
-                <span >Jog around the park 3x</span>
-              </label>
-              <button class="checkbox__button js-btn-eliminar">
-                <img src="/images/icon-delete.svg"   alt="icon-delete"/>
-              </button>
-            </li>
-
-            <li class="list__item">
-              <label class="checkbox" >
-                <input class="checkbox__input"  type="checkbox" name="myCheckboxName"
-                />
-                <div class="checkbox__box "></div>
-                <span>10 minutes meditation</span>
-              </label>
-              <button class="checkbox__button js-btn-eliminar">
-                <img src="/images/icon-delete.svg"   alt="icon-delete"/>
-              </button>
-            </li>
-            
-
-            <li class="list__item">
-              <label class="checkbox" >
-                <input class="checkbox__input" type="checkbox"
-                  name="myCheckboxName"
-                />
-                <div class="checkbox__box"></div>
-                <span>Read for 1 hour</span>
-              </label>
-              <button class="checkbox__button js-btn-eliminar">
-                <img src="/images/icon-delete.svg"   alt="icon-delete"/>
-              </button>
-            </li>
-
-            <li class="list__item">
-              <label class="checkbox">
-                <input
-                  class="checkbox__input"
-                  type="checkbox"
-                  name=""
-                />
-                <div class="checkbox__box"></div>
-                <span>Pick up groceries</span>
-              </label>
-              <button class="checkbox__button js-btn-eliminar">
-                <img src="/images/icon-delete.svg"   alt="icon-delete"/>
-              </button>
-            </li>
-
-            <li class="list__item">
-              <label class="checkbox" >
-                <input
-                  class="checkbox__input"
-                  type="checkbox"
-                  name="myCheckboxName"
-                />
-                <div class="checkbox__box "></div>
-                <span>Complete Todo App on Fronted Mentor</span>
-              </label>
-              <button class="checkbox__button js-btn-eliminar">
-                <img src="/images/icon-delete.svg"   alt="icon-delete"/>
-              </button>
-            </li> 
-          </ul>
-
-          <div class=" task__options">
-            <span> 5 items left</span>
-            <div>
-              <a class="options__choice" href="#">All</a>
-              <a class="options__choice" >Active</a>
-              <a class="options__choice">Complete </a>
+          <div class="task__options">
+            <span class="js-counter">0 items left</span>
+            <span class=""></span>
+            <div> 
+              <button class="options__choice checkbox__button  js-btn-all">All</button>
+              <button class="options__choice checkbox__button js-btn-active">Active</button>
+              <button class="options__choice  checkbox__button js-task-complete">Complete</button>
             </div>
-            <span>Clear Complete</span>
+            <button class="checkbox__button js-clear-task">
+              <span>Clear Complete</span>
+            </button>
           </div>
         </div>
       </div>
